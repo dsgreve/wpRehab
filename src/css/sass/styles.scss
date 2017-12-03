@@ -1,0 +1,21 @@
+$base-color: #E6F3F7;
+$second-color: #ff463b;
+$base-font: 'Cantarell', sans-serif;
+$heading-font: 'Fjalla One', sans-serif;
+
+@import 'mixins';
+
+html, body {
+	background: $base-color;
+	font-family: $base-font;
+}
+
+p{
+  color: $second-color;
+  font-size: 1.3em;
+}
+
+.heading{
+  font-family: $heading-font;
+  @include ninjalink ('blue', 'red', 'pink', 'purple')
+}
