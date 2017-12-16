@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: [{
-          src: 'src/css/sass/styles.scss',
+          src: 'src/css/sass/main.scss',
           dest: 'src/css/styles.css'
         }]
       }
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['src/css/sass/styles.scss'],
+      files: ['src/css/sass/*.scss'],
       tasks: ['sass','cssmin']
     }
   }); //end initConfig

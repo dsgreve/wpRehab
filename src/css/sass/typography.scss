@@ -1,0 +1,41 @@
+html, body {
+	background: #6fbbff;
+	font-family: 'Cantarell', sans-serif;
+}
+
+#branding {height: 260px;}
+
+h1, #branding h2 {
+		color:#FFF;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-size: 3.2vw;
+    margin: 0 0 23px 0;
+		text-align: center;
+    }
+h2 {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0 0 23px 0;
+    }
+p {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
+#branding h1{
+  background: transparent url(assets/images/wpRehab-header.png);
+  background-size: contain;
+  width: 280px;
+  height: 118px;
+  margin:10px auto;
+  text-indent: -999em;
+}
