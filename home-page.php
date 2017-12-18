@@ -10,18 +10,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="homeWrapper">
-					<section id="content"class="box hpContent" role="main">
+				<section>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<!--
-					<header class="header">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
-					</header>
-				-->
 					<section class="entry-content">
 					<?php the_content(); ?>
 					<div class="entry-links"><?php wp_link_pages(); ?></div>
-					</section>
+					<?php endwhile; endif; ?>
+				</section>
 					<section class="hpOptions">
 						<div>
 							<i class="fa fa-paint-brush" aria-hidden="true"></i>
@@ -56,11 +52,8 @@ get_header(); ?>
 							<h3>Lead Generation</h3>
 						</div>
 					</article>
-					<?php endwhile; endif; ?>
+
 					</section>
-			<section class="box c">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/wp-expert_blue.svg" alt="your wordpress expert" />
-			</section>
 		</div>
 		<section class="formHolder">
 			<div class="homeWrapper">

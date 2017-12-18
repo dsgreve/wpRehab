@@ -1,0 +1,250 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**** End Reset ****/
+
+/*
+Theme Name: wordpressRehab
+Author: Dale Greve
+Description: Custom Grid Based Template
+Version: 0.0.1
+Tags: grid
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*** Color Pallete
+#E6F3F7;
+#558C89
+#74AFAD
+#ff463b
+#ECECEA
+
+**/
+
+html, body {
+	background: #6fbbff;
+	font-family: 'Cantarell', sans-serif;
+}
+
+#branding {height: 260px;}
+
+h1, #branding h2 {
+		color:#FFF;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    line-height: 1.2;
+    font-size: 3.2vw;
+    margin: 0 0 23px 0;
+		text-align: center;
+    }
+h2 {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0 0 23px 0;
+    }
+p {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
+#branding h1{
+  background: transparent url(assets/images/wpRehab-header.png);
+  background-size: contain;
+  width: 280px;
+  height: 118px;
+  margin:10px auto;
+  text-indent: -999em;
+}
+
+.homeWrapper {
+	width: 90%;
+	margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  color: #FFF;
+}
+/** HP Options  **/
+.hpOptions {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 150px;
+	text-align: center;
+	color: #ff463b;
+	font-weight: 400;
+	margin:60px 0;
+}
+
+.hpOptions i {
+	background: #ff463b;
+	border-radius: 100%;
+	border: 4px solid #fff;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.46);
+	color: #FFF;
+	font-size: 45px;
+	height: 60px;
+	padding: 30px;
+	text-align: center;
+	transition: .5s;
+	vertical-align: middle;
+	width: 60px;
+}
+
+/** Form Style ***/
+.formHolder {
+	width: 100%;
+	background: #d6ebf2 url(assets/images/wpRehab_bg.jpg) center center;
+	background-size:cover;
+	}
+
+form {
+	max-width: 650px;
+	margin: 25px 0;
+	color: #ff463b;
+}
+
+form input {
+	border: none;
+  background: transparent;
+  border-bottom: 1px solid #ff463b;
+  outline: none;
+	color: #ff463b;
+	padding: 8px;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	font-weight: 200;
+	width: 80%;
+}
+
+ form label {
+	 border:none;
+	 color: #ff463b;
+	 font-weight: 200;
+ }
+
+form input::placeholder {
+	color: #ff463b;
+}
+
+textarea {
+	border:1px solid #ff463b;
+	width:80%;
+	padding: 4px;
+	font-size:1.2em;
+	color: #ff463b;
+	font-weight:200;
+	margin-top: 20px;
+	background:rgba(255,255,255, 0.8);
+	height: 140px;
+}
+
+input[type="submit"] {
+	background-color:#ff463b;
+	width: 250px;
+	font-size:1em;
+	color:#FFF;
+	padding:12px;
+
+	border-radius:3%;
+}
+
+/* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+			.homeWrapper {
+				width: 80%;
+				max-width: 920px;
+			  grid-template-columns: 80% 20%;
+			}
+
+			.hpForm{
+				grid-column: 1 / span 2;
+			}
+
+    }
+
+/* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+			h1, #branding h2 {
+				font-size:2.3vw;
+			}
+			h3 {
+				font-weight: 200;
+				font-size: 1.1em;
+				text-shadow: 1px 1px 1px #e3e3e3;
+				margin:10px 0;
+			}
+			.hpOptions {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				grid-template-rows: 150px;
+				grid-gap: 2.2em 1.3em;
+			}
+			.hpOptions div{
+				text-align: center;
+			}
+
+			.hpOptions i {
+				font-size:5vw;
+			}
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+@media only screen  and (min-width : 1224px) {
+
+}

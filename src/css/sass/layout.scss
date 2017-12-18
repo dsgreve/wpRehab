@@ -1,12 +1,87 @@
 .homeWrapper {
-	width: 90%;
+	width: 70%;
 	margin:0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
   color: #FFF;
+	max-width: 960px;
+	@include tablet {
+		width: 62%;
+	}
+	@include desktop {
+		width: 50%;
+	}
 }
 /** HP Options  **/
+
+.intro {
+	display: grid;
+	background: url(assets/images/wpRehab_bg.jpg) center center;
+	background-size: cover;
+	grid-template-columns: 1fr 1fr 60% 1fr;
+  padding: 25px 0;
+  margin-bottom: 40px;
+  grid-gap: 20px;
+	@include tablet {
+		grid-template-columns: 1fr 1fr 40% 1fr;
+		grid-template-rows:1fr 1fr;
+	}
+	@include desktop {
+		grid-template-columns: 1fr 1fr 40% 1fr;
+	}
+}
+
+.intro .box.a {
+	grid-column-start: 2;
+	@include tablet {
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+	@include desktop {
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+
+}
+.intro .box.a img {
+	height:260px;
+	margin-top:-60px;
+	@include tablet {
+		height:350px;
+		float:right;
+		margin-right:40px;
+	}
+	@include desktop {
+		height:350px;
+		float:right;
+		margin-right:40px;
+	}
+}
+
+.intro .box.b {
+	grid-column-start: 3;
+	@include tablet {
+		grid-row-end: 2
+	}
+	@include desktop {
+		grid-row-end: 2
+	}
+
+}
+.intro .box.c {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	@include tablet {
+		grid-column-start: 3;
+		grid-row-start:2
+	}
+	@include desktop {
+		grid-column-start: 3;
+		grid-row-start:2
+	}
+}
 .hpOptions {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -34,11 +109,7 @@
 
 /* Extra Small Devices, Phones */
     @media only screen and (min-width : 480px) {
-			.homeWrapper {
-				width: 80%;
-				max-width: 920px;
-			  grid-template-columns: 80% 20%;
-			}
+
 
 			.hpForm{
 				grid-column: 1 / span 2;

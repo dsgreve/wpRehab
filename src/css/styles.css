@@ -44,32 +44,34 @@ table {
 /**** End Reset ****/
 html, body {
   background: #6fbbff;
-  font-family: 'Cantarell', sans-serif; }
-
-#branding {
-  height: 260px; }
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1, #branding h2 {
   color: #FFF;
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
-  text-transform: capitalize;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   line-height: 1.2;
-  font-size: 3.2vw;
+  font-size: 150%;
   margin: 0 0 23px 0;
-  text-align: center; }
+  text-transform: none; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    h1, #branding h2 {
+      font-size: 180%; } }
+  @media (min-width: 1024px) {
+    h1, #branding h2 {
+      font-size: 200%; } }
 
 h2 {
-  font-family: 'Cantarell', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: -1px;
   margin: 0 0 23px 0; }
 
 p {
-  font-family: 'Cantarell', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 23px;
   margin: 0 0 23px 0; }
@@ -82,15 +84,103 @@ p {
   margin: 10px auto;
   text-indent: -999em; }
 
+.intro a {
+  background: #ff463b;
+  border: 2px solid #fff;
+  display: block;
+  padding: 10px 0;
+  color: #FFF;
+  text-decoration: none;
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  font-size: 100%;
+  width: 100%; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .intro a {
+      font-size: 1.2em; } }
+  @media (min-width: 1024px) {
+    .intro a {
+      font-size: 1.2em; } }
+
 .homeWrapper {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  color: #FFF; }
+  color: #FFF;
+  max-width: 960px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .homeWrapper {
+      width: 62%; } }
+  @media (min-width: 1024px) {
+    .homeWrapper {
+      width: 50%; } }
 
 /** HP Options  **/
+.intro {
+  display: grid;
+  background: url(assets/images/wpRehab_bg.jpg) center center;
+  background-size: cover;
+  grid-template-columns: 1fr 1fr 60% 1fr;
+  padding: 25px 0;
+  margin-bottom: 40px;
+  grid-gap: 20px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .intro {
+      grid-template-columns: 1fr 1fr 40% 1fr;
+      grid-template-rows: 1fr 1fr; } }
+  @media (min-width: 1024px) {
+    .intro {
+      grid-template-columns: 1fr 1fr 40% 1fr; } }
+
+.intro .box.a {
+  grid-column-start: 2; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .intro .box.a {
+      grid-row-start: 1;
+      grid-row-end: 3; } }
+  @media (min-width: 1024px) {
+    .intro .box.a {
+      grid-row-start: 1;
+      grid-row-end: 3; } }
+
+.intro .box.a img {
+  height: 260px;
+  margin-top: -60px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .intro .box.a img {
+      height: 350px;
+      float: right;
+      margin-right: 40px; } }
+  @media (min-width: 1024px) {
+    .intro .box.a img {
+      height: 350px;
+      float: right;
+      margin-right: 40px; } }
+
+.intro .box.b {
+  grid-column-start: 3; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .intro .box.b {
+      grid-row-end: 2; } }
+  @media (min-width: 1024px) {
+    .intro .box.b {
+      grid-row-end: 2; } }
+
+.intro .box.c {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .intro .box.c {
+      grid-column-start: 3;
+      grid-row-start: 2; } }
+  @media (min-width: 1024px) {
+    .intro .box.c {
+      grid-column-start: 3;
+      grid-row-start: 2; } }
+
 .hpOptions {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -116,18 +206,13 @@ p {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  .homeWrapper {
-    width: 80%;
-    max-width: 920px;
-    grid-template-columns: 80% 20%; }
   .hpForm {
     grid-column: 1 / span 2; } }
 
 /** Form Style ***/
 .formHolder {
   width: 100%;
-  background: #d6ebf2 url(assets/images/wpRehab_bg.jpg) center center;
-  background-size: cover; }
+  background: darkslategrey; }
 
 form {
   max-width: 650px;
@@ -175,8 +260,6 @@ input[type="submit"] {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  h1, #branding h2 {
-    font-size: 2.3vw; }
   h3 {
     font-weight: 200;
     font-size: 1.1em;
