@@ -226,6 +226,10 @@ input[type="submit"] {
 			}
 			.hpOptions div{
 				text-align: center;
+				box-shadow: 0 1px 4px rgba(0, 0, 0, 0.46);
+				background: #FFF;
+				border:4px solid #ff463b;
+				padding: 12px;
 			}
 
 			.hpOptions i {

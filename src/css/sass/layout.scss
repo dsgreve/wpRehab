@@ -88,9 +88,9 @@
 	}
 }
 
-.hpOptions i {
+
+.hpOptions i, .hpOptions .icon  {
 	background: #ff463b;
-	border-radius: 100%;
 	border: 4px solid #fff;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.46);
 	color: #FFF;
@@ -101,7 +101,10 @@
 	transition: .5s;
 	vertical-align: middle;
 	width: 60px;
+	margin-top:-50px;
 }
+
+
 
 /* Extra Small Devices, Phones */
     @media only screen and (min-width : 480px) {

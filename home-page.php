@@ -20,14 +20,20 @@ get_header(); ?>
 				</section>
 					<section class="hpOptions">
 						<div>
-							<i class="fa fa-keyboard-o" aria-hidden="true"></i>
+							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/keyboard.svg" alt="keyboard"/>
+
 							<h3>Content Updates</h3>
+							<p>Keeping your website current not only helps provide your customers with timely information it also helps with your serch engine ranking.</p>
 						</div>
 						<div>
-							<i class="fa fa-mobile" aria-hidden="true"></i>
-							<h3>Perormance Optimization</h3>
+							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/rocket.svg" alt="rocket"/>
+							<h3>Performance Optimization</h3>
 							<p>A slow site will have have a negative affect on your bottome line.  From mobile to desktop your users expect a page to load quickly.  We make sure your site is running quickly and efficiently. Let's make sure you a faster website.</p>
-
+						</div>
+						<div>
+							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/analytics.svg" alt="site analytics"/>
+							<h3>Analytics and activity monitoring</h3>
+							<p>Knowing who your customers are, where they are coming from and how they are using your site will give you you the information needed to improve your website, and make it the best it can be. </p>
 						</div>
 						<div>
 							<i class="fa fa-stethoscope" aria-hidden="true"></i>
@@ -38,11 +44,6 @@ get_header(); ?>
 							<i class="fa fa-plug" aria-hidden="true"></i>
 							<h3>Site Backup Plans</h3>
 							<p>Rest easy knowing your site is always backed up and your webhost isn't webhost isn’t liable if they lose your data.
-						</div>
-						<div>
-							<i class="fa fa-line-chart" aria-hidden="true"></i>
-							<h3>Analytics and activity monitoring</h3>
-							<p>Knowing who your customers are, where they are coming from and how they are using your site will give you you the information needed to improve your website, and make it the best it can be. </p>
 						</div>
 						<div>
 							<i class="fa fa-home" aria-hidden="true"></i>
