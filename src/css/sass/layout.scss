@@ -1,17 +1,11 @@
 .homeWrapper {
-	width: 70%;
+	width: 100%;
 	margin:0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 1em;
   color: #FFF;
-	max-width: 960px;
-	@include tablet {
-		width: 62%;
-	}
-	@include desktop {
-		width: 50%;
-	}
+	max-width: 1200px;
 }
 /** HP Options  **/
 
@@ -85,11 +79,13 @@
 .hpOptions {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 150px;
 	text-align: center;
 	color: #ff463b;
 	font-weight: 400;
 	margin:60px 0;
+		@include desktop {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 .hpOptions i {

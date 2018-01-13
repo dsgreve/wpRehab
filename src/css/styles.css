@@ -100,22 +100,17 @@ p {
       font-size: 1.2em; } }
   @media (min-width: 1024px) {
     .intro a {
-      font-size: 1.2em; } }
+      font-size: 1.2em;
+      max-width: 360px; } }
 
 .homeWrapper {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 1em;
   color: #FFF;
-  max-width: 960px; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .homeWrapper {
-      width: 62%; } }
-  @media (min-width: 1024px) {
-    .homeWrapper {
-      width: 50%; } }
+  max-width: 1200px; }
 
 /** HP Options  **/
 .intro {
@@ -184,11 +179,13 @@ p {
 .hpOptions {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px;
   text-align: center;
   color: #ff463b;
   font-weight: 400;
   margin: 60px 0; }
+  @media (min-width: 1024px) {
+    .hpOptions {
+      grid-template-columns: 1fr 1fr 1fr; } }
 
 .hpOptions i {
   background: #ff463b;

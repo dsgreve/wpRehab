@@ -224,12 +224,6 @@ input[type="submit"] {
 				text-shadow: 1px 1px 1px #e3e3e3;
 				margin:10px 0;
 			}
-			.hpOptions {
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr 1fr;
-				grid-template-rows: 150px;
-				grid-gap: 2.2em 1.3em;
-			}
 			.hpOptions div{
 				text-align: center;
 			}

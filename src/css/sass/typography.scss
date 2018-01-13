@@ -55,10 +55,12 @@ p {
 	font-size: 100%;
 	width: 100%;
 
+
 	@include tablet {
 		font-size:1.2em;
 	}
 	@include desktop {
 		font-size:1.2em;
+		max-width:360px;
 	}
 }
