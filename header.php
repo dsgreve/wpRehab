@@ -2,6 +2,8 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<title>Wordpress Rehab | Take the stress out of your website</title>
+<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 <meta name="viewport" content="width=device-width" />
 <link href="http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:900,900italic,800,800italic,700,700italic,600,600italic,500,500italic,400,400italic,300,300italic,200,200italic,100,100italic" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />

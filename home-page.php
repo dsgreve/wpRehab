@@ -23,38 +23,34 @@ get_header(); ?>
 							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/keyboard.svg" alt="keyboard"/>
 
 							<h3>Content Updates</h3>
-							<p>Keeping your website current not only helps provide your customers with timely information it also helps with your serch engine ranking.</p>
+							<p>Keeping your website current not only helps provide your customers with timely information it also helps with your search engine ranking.</p>
 						</div>
 						<div>
 							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/rocket.svg" alt="rocket"/>
 							<h3>Performance Optimization</h3>
-							<p>A slow site will have have a negative affect on your bottome line.  From mobile to desktop your users expect a page to load quickly.  We make sure your site is running quickly and efficiently. Let's make sure you a faster website.</p>
+							<p>A slow site will have have a negative affect on your bottom line.  From mobile to desktop your users expect a page to load quickly.  We make sure your site is running quickly and efficiently.</p>
 						</div>
 						<div>
 							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/analytics.svg" alt="site analytics"/>
 							<h3>Analytics and activity monitoring</h3>
-							<p>Knowing who your customers are, where they are coming from and how they are using your site will give you you the information needed to improve your website, and make it the best it can be. </p>
+							<p>Knowing who your customers are, where they are coming from and how they are using your site will give you you the information needed to improve your website, and make it the best it can be.</p>
 						</div>
 						<div>
-							<i class="fa fa-stethoscope" aria-hidden="true"></i>
-							<h3>SEO Review</h3>
-
+							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/search-engine.svg" alt="SEO Audit"/>
+							<h3>SEO Audit</h3>
+							A review of your current SEO will help find out if your site is easy to find.  Let's work together to improve your search engine ranking.</p>
 						</div>
 						<div>
-							<i class="fa fa-plug" aria-hidden="true"></i>
+							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/backup.svg" alt="site backup"/>
 							<h3>Site Backup Plans</h3>
-							<p>Rest easy knowing your site is always backed up and your webhost isn't webhost isn’t liable if they lose your data.
+							<p>Rest easy knowing your site is always backed up and protected. A daily offsite backup plan will keep your site safe and easy to restore in the event of data loss.</p>
 						</div>
 						<div>
-							<i class="fa fa-home" aria-hidden="true"></i>
-							<h3>Theme Customizations</h3>
-						</div>
-						<div>
-							<i class="fa fa-group" aria-hidden="true"></i>
-							<h3>Lead Generation</h3>
+							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/graphic-design.svg" alt="Theme Support"/>
+							<h3>Theme and Plugin Support</h3>
+							<p>Have a new theme or plugin that you need to customize?  Wordpress Rehab can help with wrangling unruly themes and making sure your plugins are secure.</p>
 						</div>
 					</article>
-
 					</section>
 		</div>
 		<section class="formHolder">
