@@ -127,15 +127,12 @@
 	width: 60px;
 	margin-top:-50px;
 }
-
-
-
-/* Extra Small Devices, Phones */
-    @media only screen and (min-width : 480px) {
-
-
-			.hpForm{
-				grid-column: 1 / span 2;
-			}
-
-    }
+/*** footer ***/
+footer {
+	height:180px;
+	text-align:center;
+}
+#copyright {
+	margin:20px 0;
+	text-align: center;
+}

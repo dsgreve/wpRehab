@@ -1,12 +1,14 @@
 /** Form Style ***/
 .formHolder {
 	width: 100%;
-	background: darkslategrey;
+	background: #FFF;
+	border-top: 10px solid $second-color;
+	border-bottom: 10px solid $second-color;
 	}
 
 form {
 	max-width: 650px;
-	margin: 25px 0;
+	margin: 25px auto;
 	color: $second-color;
 }
 
