@@ -55,8 +55,8 @@ get_header(); ?>
 		</div>
 		<section class="formHolder">
 			<div class="homeWrapper">
-		  	<section class="box hpForm">
-					<?php echo do_shortcode( '[contact-form-7 id="5" title="Contact form 1"]' ); ?>
+		  	<section id="contactForm" class="box hpForm">
+					<?php echo do_shortcode( '[wpforms id="21" title="false" description="false"]' ); ?>
 				</section>
 				<section class="box c">
 

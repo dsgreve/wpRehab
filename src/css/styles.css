@@ -250,10 +250,9 @@ form {
   margin: 25px auto;
   color: #ff463b; }
 
-form input {
-  border: none;
-  background: transparent;
-  border-bottom: 1px solid #ff463b;
+form input,
+div.wpforms-container-full .wpforms-form input:focus, div.wpforms-container-full .wpforms-form textarea:focus, div.wpforms-container-full .wpforms-form select:focus {
+  border: 1px solid #ff463b !important;
   outline: none;
   color: #ff463b;
   padding: 8px;
@@ -261,6 +260,9 @@ form input {
   letter-spacing: 1px;
   font-weight: 200;
   width: 80%; }
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+  border: 1px solid #ff463b !important; }
 
 form label {
   border: none;
@@ -281,10 +283,22 @@ textarea {
   background: rgba(255, 255, 255, 0.8);
   height: 140px; }
 
-input[type="submit"] {
-  background-color: #ff463b;
+div.wpforms-container-full .wpforms-form button[type=submit] {
+  background-color: #ff463b !important;
   width: 250px;
   font-size: 1em;
-  color: #FFF;
+  color: #FFF !important;
   padding: 12px;
   border-radius: 3%; }
+
+div.wpforms-container-full .wpforms-form button[type=submit]:hover,
+div.wpforms-container-full .wpforms-form button[type=submit]:active {
+  color: #ff463b !important;
+  border: 1px solid #ff463b !important;
+  background-color: #FFF !important; }
+
+.wpforms-confirmation-container-full {
+  background: transparent !important;
+  border: none !important;
+  text-align: center;
+  margin: 50px 0 !important; }
