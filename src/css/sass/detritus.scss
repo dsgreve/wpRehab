@@ -6,10 +6,17 @@
 	border-bottom: 10px solid $second-color;
 	}
 
+.page-template-general-page .formHolder {
+	width: 100%;
+	background: #FFF;
+	border:4px solid $second-color;
+	}
+
 form {
 	max-width: 650px;
 	margin: 25px auto;
 	color: $second-color;
+	width: 90%;
 }
 
 form input,

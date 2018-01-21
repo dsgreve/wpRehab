@@ -9,7 +9,7 @@ get_header(); ?>
 <div class="wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="homeWrapper">
+			<div class="intWrapper">
 				<section>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

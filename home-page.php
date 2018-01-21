@@ -28,7 +28,10 @@ get_header(); ?>
 						<div>
 							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/rocket.svg" alt="rocket"/>
 							<h3>Performance Optimization</h3>
-							<p>A slow site will have have a negative affect on your bottom line.  From mobile to desktop your users expect a page to load quickly.  We make sure your site is running quickly and efficiently.</p>
+							<p>A slow site will have have a negative effect on your bottom line.  From mobile to desktop your users expect a page to load quickly.  We make sure your site is running quickly and efficiently.</p>
+							<p>
+								<a href="/free-website-performance-report/" title="Get a performance review">Get a free performance review</a>
+							</p>
 						</div>
 						<div>
 							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/analytics.svg" alt="site analytics"/>
@@ -39,6 +42,9 @@ get_header(); ?>
 							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/search-engine.svg" alt="SEO Audit"/>
 							<h3>SEO Audit</h3>
 							A review of your current SEO will help find out if your site is easy to find.  Let's work together to improve your search engine ranking.</p>
+							<p>
+								<a href="free-website-performance-report/" title="Get your free website review">Get a free SEO analysis</a>
+							</p>
 						</div>
 						<div>
 							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/backup.svg" alt="site backup"/>
@@ -56,17 +62,11 @@ get_header(); ?>
 		<section class="formHolder">
 			<div class="homeWrapper">
 		  	<section id="contactForm" class="box hpForm">
+					<h1>How can we help?</h1>
+					<p>Have a question or interested in working with us? Just fill out the form field below.</p>
 					<?php echo do_shortcode( '[wpforms id="21" title="false" description="false"]' ); ?>
 				</section>
-				<section class="box c">
-
-				</section>
-		</div><!-- End homeWrapper -->
-	</section>
-
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
+			</div><!-- /homeWrapper -->
+		</section><!-- formHolder -->
 
 <?php get_footer();

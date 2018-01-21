@@ -25,9 +25,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header id="header" role="banner">
 <section id="branding">
 <div id="site-title">
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home">
   <h1>
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
+    <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
   </h1>
+  </a>
 </div>
   <section class="intro">
     <div class="box a">
@@ -38,7 +40,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="box c">
       <p>
-        <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<a class="freeReviewBtn" href="#contactForm" title="Get Your free site review">Get Your Free Site Review</a>'; }?>
+        <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<a class="freeReviewBtn" href="/free-website-performance-report/" title="Get Your free site review">Get Your Free Site Review</a>'; }?>
     </p>
     </div>
   </section><!-- /intro -->
