@@ -43,7 +43,7 @@ table {
 
 /**** End Reset ****/
 html, body {
-  background: #708090;
+  background: #003366;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1, #branding h2 {
@@ -53,7 +53,8 @@ h1, #branding h2 {
   line-height: 1.2;
   font-size: 150%;
   margin: 0 0 23px 0;
-  text-transform: none; }
+  text-transform: none;
+  text-shadow: 2px 2px 2px #000; }
   @media (min-width: 768px) and (max-width: 1023px) {
     h1, #branding h2 {
       font-size: 180%; } }
@@ -75,6 +76,13 @@ h3 {
   font-size: 1.1em;
   text-shadow: 1px 1px 1px #e3e3e3;
   margin: 10px 0; }
+
+.intArtWrapper h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #ff463b; }
+
+.intArtWrapper h1 {
+  text-shadow: 1px 1px 1px #000; }
 
 p {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -116,13 +124,20 @@ p {
   text-transform: capitalize;
   font-weight: 400; }
 
+.intArtWrapper a {
+  color: #ff463b; }
+
 .formHolder p, .formHolder h1 {
   color: #ff463b;
   text-align: center;
   margin-top: 20px; }
 
 footer {
-  font-size: .75em; }
+  font-size: .75em;
+  color: #FFF; }
+
+footer a {
+  color: #25919B; }
 
 .homeWrapper {
   width: 100%;
@@ -142,10 +157,21 @@ footer {
   color: #FFF;
   max-width: 840px; }
 
+.intArtWrapper {
+  background: #FFF;
+  width: 100%;
+  margin: -40px auto 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  color: #000;
+  max-width: 840px;
+  padding: 20px; }
+
 /** HP Options  **/
 .intro {
   display: grid;
-  background: url(assets/images/wpRehab_bg.jpg) center center;
+  background: url(assets/images/wpRehab_workspace_bg-mb.jpg) center center;
   background-size: cover;
   border-top: 4px solid #ff463b;
   border-bottom: 4px solid #ff463b;
@@ -155,10 +181,12 @@ footer {
   grid-gap: 20px; }
   @media (min-width: 768px) and (max-width: 1023px) {
     .intro {
+      background: url(assets/images/wpRehab_workspace_bg-dt.jpg) center center;
       grid-template-columns: 1fr 1fr 40% 1fr;
       grid-template-rows: 1fr; } }
   @media (min-width: 1024px) {
     .intro {
+      background: url(assets/images/wpRehab_workspace_bg-dt.jpg) center center;
       grid-template-columns: 1fr 1fr 40% 1fr; } }
 
 .intro .box.a {
@@ -257,6 +285,10 @@ footer {
   vertical-align: middle;
   width: 60px;
   margin: -50px 0 15px; }
+
+/*** Interior  ****/
+.alignright {
+  float: right; }
 
 /*** footer ***/
 footer {

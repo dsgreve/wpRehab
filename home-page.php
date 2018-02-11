@@ -30,7 +30,7 @@ get_header(); ?>
 							<h3>Performance Optimization</h3>
 							<p>A slow site will have have a negative effect on your bottom line.  From mobile to desktop your users expect a page to load quickly.  We make sure your site is running quickly and efficiently.</p>
 							<p>
-								<a href="/free-website-performance-report/" title="Get a performance review">Get a free performance review</a>
+								<a class="ctaLink" href="/free-website-performance-report/" title="Get a performance review">Get a free performance review</a>
 							</p>
 						</div>
 						<div>
@@ -43,7 +43,7 @@ get_header(); ?>
 							<h3>SEO Audit</h3>
 							A review of your current SEO will help find out if your site is easy to find.  Let's work together to improve your search engine ranking.</p>
 							<p>
-								<a href="free-website-performance-report/" title="Get your free website review">Get a free SEO analysis</a>
+								<a class="ctaLink" href="free-website-performance-report/" title="Get your free website review">Get a free SEO analysis</a>
 							</p>
 						</div>
 						<div>

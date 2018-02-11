@@ -11,6 +11,7 @@ h1, #branding h2 {
   font-size: 150%;
   margin: 0 0 23px 0;
 	text-transform: none;
+	text-shadow: 2px 2px 2px #000;
 	@include tablet {
 		font-size:180%;
 	}
@@ -35,6 +36,13 @@ h3 {
 	margin:10px 0;
 }
 
+.intArtWrapper h1, h2, h3, h4 {
+	font-weight: 700;
+	color: $second-color;
+}
+.intArtWrapper h1 {
+	text-shadow: 1px 1px 1px #000;
+}
 p {
     font-family: $base-font;
     font-size: 17px;
@@ -72,11 +80,14 @@ p {
 	}
 }
 
-.hpOptions a{
+.hpOptions a {
 	color: $link-color;
 	margin-bottom: 20px;
 	text-transform: capitalize;
 	font-weight: 400;
+}
+.intArtWrapper a {
+	color: $second-color;
 }
 
 .formHolder p, .formHolder h1 {
@@ -87,4 +98,10 @@ p {
 
 footer {
 	font-size: .75em;
-}
+	color: #FFF;
+	}
+
+
+	footer a {
+		color: $link-color;
+	}
