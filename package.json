@@ -1,0 +1,34 @@
+{
+  "name": "wprehab",
+  "version": "2.0.0",
+  "description": "New Theme using gulp and grid",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-watch": "^5.0.1",
+    "postcss-hexrgba": "^1.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.0",
+    "postcss-simple-vars": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsgreve/wpRehab.git"
+  },
+  "author": "Dale Greve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsgreve/wpRehab/issues"
+  },
+  "homepage": "https://github.com/dsgreve/wpRehab#readme"
+}
