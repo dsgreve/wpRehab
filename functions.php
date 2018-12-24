@@ -10,22 +10,61 @@
  * @link    https://www.dalegreve.com/
  */
 
-include_once( get_template_directory() . '/lib/init.php' );
 
-//* We tell the name of our child theme
-define( 'Child_Theme_Name', __( 'WordpresRehab', 'wprehab' ) );
-//* We tell the web address of our child theme (More info & demo)
-define( 'Child_Theme_Url', 'http://dalegreve.com' );
-//* We tell the version of our child theme
-define( 'Child_Theme_Version', '2.1.0' );
+ //load text domain for child-theme
+load_child_theme_textdomain('wordpress-rehab');
 
-//* Add HTML5 markup structure from Genesis
-add_theme_support( 'html5' );
 
-//* Add HTML5 responsive recognition
-add_theme_support( 'genesis-responsive-viewport' );
+//php include function - direct include - non-preferred method but you may see in the wild
+//include_once( get_template_directory() . '/lib/init.php' );
 
-add_action( 'wp_enqueue_scripts', 'my_child_theme_scripts' );
-function my_child_theme_scripts() {
-    wp_enqueue_style( 'parent-theme-css', get_template_directory_uri() . '/style.css' );
+//preferred method of calling genesis parent - priority of 15 ensures this runs after genesis theme
+add_action('genesis_setup', 'wpRehab_setup', 15);
+
+/**
+ * Theme Setup.
+ * 
+ * Attach all of the site-wide functions to the correct hooks and filters.
+ * All the functions themese are defined in this setup function.
+ * 
+ * @since 2.0.0
+ */
+
+function wpRehab_setup() {
+    //Define theme constants
+    define('CHILD_THEME_NAME', 'wpRehab');
+    define('CHILD_THEME_URL', 'http://wordpressrehab.com');
+    define('CHILD_THEME_VERSION', '2.0.0');
+
+    //Add html5 markup structure
+    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+    
+    //Add viewport meta tag for mobile browsers
+    add_theme_support( 'genesis-responsive-viewport' );
+    
+    //Add theme suport for accessibility
+    add_theme_support(
+        'genesis-accessibility',
+        array(
+            '404-page',
+            'drop-down-menu',
+            'headings',
+            'rems',
+            'search-form',
+            'skip-links',
+        )
+    );
+
+    //Add theme support for footer widges
+    add_theme_support('genesis-footer-widgets',3);
+
+    genesis_unregister_layout( 'content-sidebar-sidebar' );
+    genesis_unregister_layout( 'sidebar-content-sidebar' );
+    genesis_unregister_layout( 'sidebar-sidebar-content' );
+    
+    //unregister secondary sidebar
+    unregister_sidebar('sidebar-alt');
+
+    //Add theme widget areas
+    include_once( get_stylesheet_directory() . '\includes\widget-area.php' );
 }
