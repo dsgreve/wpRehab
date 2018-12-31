@@ -1,0 +1,25 @@
+.genesis-skip-link,
+.hidden {
+  position:absolute;
+  left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+/* global typography */
+body, html {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4, .wp-block-cover-text {
+  font-family: 'Volkhov', serif;
+}
+/* global layout */
+.wrap {
+  max-width: 1200px;
+  margin:0 auto;
+  padding: .5rem; 
+}
+

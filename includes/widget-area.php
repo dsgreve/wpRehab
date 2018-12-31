@@ -12,11 +12,11 @@
 
 
 //* Register front page widget area
-    genesis_register_sidebar( array(
-        'id'            => 'home-welcome',
-        'name'          => __( 'Home Welcome Video', 'wpRehab' ),
-        'description'   => __( 'This is a widget area that will be placed in the background on the homepage', 'wpRehab' ),
-    ) );
+    // genesis_register_sidebar( array(
+    //     'id'            => 'home-background-video',
+    //     'name'          => __( 'Home Background Video', 'wpRehab' ),
+    //     'description'   => __( 'Enter url of video here', 'wpRehab' ),
+    // ) );
     
     //* Register front page widget area
     genesis_register_sidebar( array(

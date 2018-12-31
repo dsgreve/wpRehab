@@ -4,7 +4,8 @@
   "description": "New Theme using gulp and grid",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.2",

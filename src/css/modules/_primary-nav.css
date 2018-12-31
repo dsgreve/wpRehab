@@ -1,0 +1,27 @@
+.nav-header {
+    float: right;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        @mixin clearfix;
+    }
+
+    li{
+        list-style-type: none;
+        padding-top: 2rem;
+        
+        @mixin atMedium {
+            float: left;
+            padding-right: 20px;
+        }
+        
+    }
+
+    a { 
+        color: $mainWhite;
+        text-decoration: none;
+        font-size: 1.125rem;
+    }
+}
+

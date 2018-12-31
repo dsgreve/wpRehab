@@ -16,7 +16,7 @@ gulp.task('watch', function() {
     });
 });
 //create task to inject css without refreshing window and run styles task
-gulp.task('cssInject', ['styles'], function(){
+gulp.task('cssInject', ['wpStyles'], function(){
     return gulp.src('style.css')
         .pipe(browserSync.stream());
 });

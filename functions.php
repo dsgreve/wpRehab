@@ -55,7 +55,7 @@ function wpRehab_setup() {
         )
     );
 
-    //Add theme support for footer widges
+    //Add theme support for footer widgets
     add_theme_support('genesis-footer-widgets',3);
 
     genesis_unregister_layout( 'content-sidebar-sidebar' );
@@ -68,3 +68,16 @@ function wpRehab_setup() {
     //Add theme widget areas
     include_once( get_stylesheet_directory() . '\includes\widget-area.php' );
 }
+
+//enqueue google fonts
+function wpRehab_add_google_fonts() {
+    wp_enqueue_style( 'wpRehab_google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,500,700|Volkhov', false );
+}
+add_action( 'wp_enqueue_scripts', 'wpRehab_add_google_fonts' );
+
+//enqueue custom js
+function wpRehab_adding_scripts() {
+    wp_enqueue_script('app', '/wp-content/themes/wpRehab/custom/scripts/App.js', array ( 'jquery' ), 1.1, true);
+    
+}
+add_action( 'wp_enqueue_scripts', 'wpRehab_adding_scripts' );  
