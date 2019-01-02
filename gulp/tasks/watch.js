@@ -14,9 +14,16 @@ gulp.task('watch', function() {
     watch('src/css/**/*.css', function() {
         gulp.start('cssInject');
     });
+    watch('src/scripts/**/*.js', function() {
+        gulp.start('scriptsRefresh');
+    });
 });
 //create task to inject css without refreshing window and run styles task
 gulp.task('cssInject', ['wpStyles'], function(){
     return gulp.src('style.css')
         .pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh', ['scripts'], function(){
+    browserSync.reload();
 });
