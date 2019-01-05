@@ -391,7 +391,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
   padding: .5rem; 
 }
 
-.site-header{
+.site-header {
     position: absolute;
     z-index: 10;
     background-color: rgba(36,39,41, .85);
@@ -467,140 +467,63 @@ h1,h2,h3,h4, .wp-block-cover-text {
     height: 45px;
     width: 230px;
     text-indent: -999em;
-    }
+}
 
 .site-description {
         display: none;
-    }
+}
 
-.nav-header {
-        opacity: 0;
-        -webkit-transform: scale(1.2);
-                transform: scale(1.2);
-        transition: all 0.3s ease-out;
-        z-index: -10;
-    }
+.wp-block-cover {
+    min-height: 650px;
+}
+
+.nav-header{    
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(255,255,255, .85);
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+   
+}
 
 @media only screen and (min-width: 800px) {
 
-.nav-header {
-            opacity: 1;
-            z-index: 1;
-            -webkit-transform: scale(1);
-                    transform: scale(1);
-            position: relative
-    }
+.nav-header{
+        z-index: 1;
+        width: auto;
+        top: 50%;
+        right: 10px;
+        height: auto;
+        background-color: transparent
+   
+}
     }
 
 .nav-header--is-visible {
-            z-index: 1;
-            opacity: 1;
-            -webkit-transform: scale(1);
-                    transform: scale(1);
-        }
-
-.mejs-overlay-button {display:none}
-
-.mejs-layer {background: rgba(155, 155, 155, .65)}
-
-.jquery-background-video-wrapper {
-	position: relative;
-	overflow: hidden;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.jquery-background-video {
-	position: absolute;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	top: 50%;
-	left: 50%;
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-webkit-transform: translate(-50%,-50%);
-	    	transform: translate(-50%,-50%);
-}
-
-/**
- * Fade in videos
- * Note the .js class - so non js users still
- * see the video
- */
-
-.js .jquery-background-video {
-	opacity: 0;
-	transition: opacity 300ms linear;
-}
-
-.js .jquery-background-video.is-visible {
-	opacity: 1;
-}
-
-/**
- * Pause/play button
- */
-
-.jquery-background-video-pauseplay {
-	position: absolute;
-	background: transparent;
-	border: none;
-	box-shadow: none;
-	width: 20px;
-	height: 20px;
-	top: 15px;
-	right: 15px;
-	padding: 0;
-	cursor: pointer;
-	outline: none !important;
-}
-
-.jquery-background-video-pauseplay span {
-	display: none;
-}
-
-.jquery-background-video-pauseplay:after,
-.jquery-background-video-pauseplay:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	transition: all .3s ease;
-}
-
-.jquery-background-video-pauseplay.play:before {
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-left: 15px solid #FFF;
-}
-
-.jquery-background-video-pauseplay.pause:before,
-.jquery-background-video-pauseplay.pause:after {
-	border-top: 10px solid #FFF;
-	border-bottom: 10px solid #FFF;
-	border-left: 5px solid #FFF;
-}
-
-.jquery-background-video-pauseplay.pause:after {
-	left: 10px;
-}
-
-.nav-header {
-    float: right;
-}
+        width: 40vw;
+      }
 
 .nav-header ul {
         margin: 0;
-        padding: 0;
+        padding: 1.5em;
     }
 
 .nav-header ul::after{
         content: "";
         clear: both;
         display: table;
+    }
+
+@media only screen and (min-width: 800px) {
+
+.nav-header ul {
+            padding:0
+    }
     }
 
 .nav-header li{
@@ -613,14 +536,58 @@ h1,h2,h3,h4, .wp-block-cover-text {
 
 .nav-header li{
             float: left;
-            padding-right: 20px
+            padding-right: 20px;
+            padding-top: 0
         
     }
     }
 
 .nav-header a { 
-        color: #FFF;
+        color: #242729;
         text-decoration: none;
         font-size: 1.125rem;
+        -webkit-transform: translate3d(-150px, 0, 0);
+                transform: translate3d(-150px, 0, 0);
+        transition: -webkit-transform .15s ease-in;
+        transition: transform .15s ease-in;
+        transition: transform .15s ease-in, -webkit-transform .15s ease-in;
+        display: block;
     }
-	
+
+@media only screen and (min-width: 800px) {
+
+.nav-header a {
+            color: #FFF;
+            display: inline
+    }
+    }
+
+.nav-header--is-visible a { 
+        -webkit-transform: translate3d(0, 0, 0); 
+                transform: translate3d(0, 0, 0);
+        transition: -webkit-transform 300ms ease-out;
+        transition: transform 300ms ease-out;
+        transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+    }
+
+.nav-header--is-visible li:first-child a {
+        transition-delay: .1s; 
+    }
+
+.nav-header--is-visible li:nth-child(2) a {
+        transition-delay: .2s; 
+    }
+
+.nav-header--is-visible li::nth-child(3) a {
+        transition-delay: .3s; 
+    }
+
+.nav-header--is-visible li:last-child a {
+        transition-delay: .4s; 
+    }
+
+.site-header__menu-icon--is-active::before,
+.site-header__menu-icon--is-active .site-header__menu-icon__middle,
+.site-header__menu-icon--is-active::after {
+    background-color: #242729;
+}

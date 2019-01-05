@@ -20,6 +20,6 @@ hexrgba = require('postcss-hexrgba');
     gulp.task('wpStyles',['styles'], function() {
         return gulp.src("./custom/styles/style.css")
         .pipe(postcss([cssImport]))
-            .pipe(gulp.dest("./"));
+        .pipe(gulp.dest("./"));
     }); 
     

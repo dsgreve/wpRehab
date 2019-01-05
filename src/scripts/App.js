@@ -1,3 +1,3 @@
-var $ = require('jquery');
-var Menu = require('./modules/Menu');
-console.log(Menu.exampleProperty);
+import MobileMenu from './modules/MobileMenu';
+
+const mobileMenu = new MobileMenu();
