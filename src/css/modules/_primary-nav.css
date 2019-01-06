@@ -79,10 +79,3 @@
     }
    
 }
-
-.site-header__menu-icon--is-active::before,
-.site-header__menu-icon--is-active .site-header__menu-icon__middle,
-.site-header__menu-icon--is-active::after {
-    background-color: $mainBlack;
-}
-    
