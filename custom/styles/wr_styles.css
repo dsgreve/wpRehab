@@ -380,9 +380,10 @@ h1,h2,h3,h4, .wp-block-cover-text {
 .site-header {
     position: absolute;
     z-index: 10;
-    background-color: rgba(36,39,41, .85);
+    background-color: rgba(74,189,172, .85);
     padding: .25rem 0;
     width: 100%;
+    transition: all .3s ease-out;
 }
 
 .site-header__menu-icon {
@@ -442,6 +443,18 @@ h1,h2,h3,h4, .wp-block-cover-text {
 .site-header__menu-icon {
             display: none
     }
+    }
+
+@media only screen and (min-width: 800px) {
+
+.site-header {
+        position: fixed
+}
+
+        .site-header--dark {
+            background: rgba(74,189,172, 1);
+            margin-top:-45px;
+        }
     }
 
 .site-header__menu-icon--is-active .site-header__menu-icon__middle {
