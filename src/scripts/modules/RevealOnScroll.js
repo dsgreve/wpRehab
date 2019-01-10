@@ -2,8 +2,9 @@ import $ from 'jquery';
 import waypoints from '../../../node_modules/waypoints/lib/noframework.waypoints';
 
 class RevealOnScroll {
-    constructor() {
-        this.itemsToReveal = $(".service-item .wp-block-column");
+    constructor(els, offset) {
+        this.itemsToReveal = els;
+        this.offsetPercentage = offset;
         this.hideInitially();
         this.createWaypoints();
     }
@@ -13,6 +14,7 @@ class RevealOnScroll {
     }
 
     createWaypoints() {
+        let that = this;
         this.itemsToReveal.each(function(){
             const currentItem = this;
             new Waypoint({
@@ -20,7 +22,7 @@ class RevealOnScroll {
                 handler: function() {
                     $(currentItem).addClass("reveal-item--is-visible")
                 }, //what we want to run
-                offset: "86%"
+                offset: that.offsetPercentage
             });
         });
     }
