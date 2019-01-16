@@ -10,7 +10,7 @@
       width: 24px;
       height: 19px;
       position: absolute;
-      top: 50px;
+      top: 39px;
       right: 16px;
       z-index: 10;
       transition: all 0.3s ease-out;
@@ -58,9 +58,9 @@
     @mixin atMedium {
         position: fixed;
 
-        &--dark {
+        &--compact {
             background: rgba($mainBackground, 1);
-            margin-top:-45px;
+            padding: 0;
         }
     }
 }
@@ -83,10 +83,9 @@
 
 }
 
-
-
 .title-area {
     float: left;
+    margin-left:20px;
 }
 
 .header-image .site-title {
@@ -95,6 +94,11 @@
     height: 45px;
     width: 230px;
     text-indent: -999em;
+    transition: height 0.3s ease-out;
+}
+
+.site-header--compact .site-title {
+    height: 25px;
 }
 
 .site-description {

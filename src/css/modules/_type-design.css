@@ -1,0 +1,46 @@
+h2 {
+    font-size: 2.25rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+.service-item h3 {
+    text-align: center;
+}
+.service-item p {
+    font-size: 1.25rem;
+    max-width: 21.875rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.large-headline {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width:80%;
+    margin-top: 4.5rem;
+
+        @mixin atMedium {
+            width: 54%;
+            font-size: 2.25rem;
+        }
+
+    &--pull-left {
+
+    }
+
+    &--pull-right {
+        float: right;
+    }
+}
+
+.dash {
+    height: 0;
+    width: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    border-top: .2rem solid;
+    top: -.1rem;
+    position: relative;
+}

@@ -14,9 +14,9 @@ class StickyHeader {
             element: this.headerTrigerElement[0],
             handler: function(direction) {
                 if(direction == "down") {
-                    that.siteHeader.addClass('site-header--dark');
+                    that.siteHeader.addClass('site-header--compact');
                 } else {
-                    that.siteHeader.removeClass('site-header--dark');
+                    that.siteHeader.removeClass('site-header--compact');
                 }
             }
         });

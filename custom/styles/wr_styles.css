@@ -366,16 +366,43 @@ body, html {
 }
 
 h1,h2,h3,h4, .wp-block-cover-text {
-  font-family: 'Volkhov', serif;
+  font-family: 'Raleway', serif;
 }
 
 /* global layout */
 
-.wrap {
+.wrap, .entry-content {
+  margin: 0 auto;
+  width: 90%;
   max-width: 1200px;
-  margin:0 auto;
-  padding: .5rem; 
+  position: relative;
 }
+
+.row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.row--gutters {
+      margin-right: -65px;
+    }
+
+.row--gutters > div {
+      padding-right: 65px;
+    }
+
+@media only screen and (min-width: 800px) {
+      .row__medium-4 {
+        float: left;
+        width: 33.33%;
+      }
+  
+      .row__medium-8 {
+        float: left;
+        width: 66.66%;
+      }
+    }
 
 .site-header {
     position: absolute;
@@ -390,7 +417,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
       width: 24px;
       height: 19px;
       position: absolute;
-      top: 50px;
+      top: 39px;
       right: 16px;
       z-index: 10;
       transition: all 0.3s ease-out;
@@ -451,9 +478,9 @@ h1,h2,h3,h4, .wp-block-cover-text {
         position: fixed
 }
 
-        .site-header--dark {
+        .site-header--compact {
             background: rgba(74,189,172, 1);
-            margin-top:-45px;
+            padding: 0;
         }
     }
 
@@ -478,6 +505,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
 
 .title-area {
     float: left;
+    margin-left:20px;
 }
 
 .header-image .site-title {
@@ -486,10 +514,22 @@ h1,h2,h3,h4, .wp-block-cover-text {
     height: 45px;
     width: 230px;
     text-indent: -999em;
+    transition: height 0.3s ease-out;
+}
+
+.site-header--compact .site-title {
+    height: 25px;
 }
 
 .site-description {
         display: none;
+}
+
+.wp-block-cover.wp-block-cover--full-width {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
 }
 
 .home .wp-block-cover {
@@ -497,7 +537,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
 }
 
 .nav-header{    
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     background-color: rgba(255,255,255, .85);
@@ -513,9 +553,10 @@ h1,h2,h3,h4, .wp-block-cover-text {
 @media only screen and (min-width: 800px) {
 
 .nav-header{
+        position: absolute;
         z-index: 1;
         width: auto;
-        top: 50%;
+        top: 29px;
         right: 10px;
         height: auto;
         background-color: transparent
@@ -605,6 +646,12 @@ h1,h2,h3,h4, .wp-block-cover-text {
         transition-delay: .4s; 
     }
 
+@media only screen and (min-width: 800px) {
+    .site-header--compact .nav-header {
+        top:20px;
+    }
+    }
+
 .reveal-item {
     opacity: 0;
     transition: opacity 1.5s ease-out;
@@ -613,3 +660,82 @@ h1,h2,h3,h4, .wp-block-cover-text {
 .reveal-item--is-visible {
         opacity: 1;
     }
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.service-item h3 {
+    text-align: center;
+}
+
+.service-item p {
+    font-size: 1.25rem;
+    max-width: 21.875rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.large-headline {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width:80%;
+    margin-top: 4.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+
+.large-headline {
+            width: 54%;
+            font-size: 2.25rem
+}
+    }
+
+.large-headline--pull-left {
+
+    }
+
+.large-headline--pull-right {
+        float: right;
+    }
+
+.dash {
+    height: 0;
+    width: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    border-top: .2rem solid;
+    top: -.1rem;
+    position: relative;
+}
+
+.home-contact-row {
+    background-image: url(http://localhost/wordpressrehab/rehabAdmin/wp-content/uploads/2019/01/adult-apple-device-business-839465.jpg);
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+.home-contact-row .wp-block-column {
+    background-color: rgba(74,189,172, .85);
+    padding: 1.25rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wpforms-container {
+    
+}
+
+.wpforms-container input[type=date], .wpforms-container input[type=datetime], .wpforms-container input[type=datetime-local], .wpforms-container input[type=email], .wpforms-container input[type=month], .wpforms-container input[type=number], .wpforms-container input[type=password], .wpforms-container input[type=range], .wpforms-container input[type=search], .wpforms-container input[type=tel], .wpforms-container input[type=text], .wpforms-container input[type=time], .wpforms-container input[type=url], .wpforms-container input[type=week], .wpforms-container select, .wpforms-container textarea {
+    border: 1px solid #4ABDAC;
+    padding: .5rem;
+}

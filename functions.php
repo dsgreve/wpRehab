@@ -55,12 +55,20 @@ function wpRehab_setup() {
         )
     );
 
+    remove_action( 'genesis_after_header','genesis_do_nav' ) ;
+	add_action( 'genesis_header_right','genesis_do_nav' );
+	add_theme_support( 'genesis-structural-wraps', array( 'header', 'menu-secondary', 'footer-widgets', 'footer' ) );//menu-primary is removed
+    
+      
     //Add theme support for footer widgets
     add_theme_support('genesis-footer-widgets',3);
 
     genesis_unregister_layout( 'content-sidebar-sidebar' );
     genesis_unregister_layout( 'sidebar-content-sidebar' );
     genesis_unregister_layout( 'sidebar-sidebar-content' );
+
+
+
     
     //unregister secondary sidebar
     unregister_sidebar('sidebar-alt');
@@ -71,7 +79,7 @@ function wpRehab_setup() {
 
 //enqueue google fonts
 function wpRehab_add_google_fonts() {
-    wp_enqueue_style( 'wpRehab_google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,500,700|Volkhov', false );
+    wp_enqueue_style( 'wpRehab_google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,500,700|Raleway', false );
 }
 add_action( 'wp_enqueue_scripts', 'wpRehab_add_google_fonts' );
 

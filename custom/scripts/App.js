@@ -110,6 +110,7 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
+new _RevealOnScroll2.default((0, _jquery2.default)(".large-headline"), "90%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".service-item"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".wp-block-quote"), "75%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".home-contact"), "60%");
@@ -11402,9 +11403,9 @@ var StickyHeader = function () {
                 element: this.headerTrigerElement[0],
                 handler: function handler(direction) {
                     if (direction == "down") {
-                        that.siteHeader.addClass('site-header--dark');
+                        that.siteHeader.addClass('site-header--compact');
                     } else {
-                        that.siteHeader.removeClass('site-header--dark');
+                        that.siteHeader.removeClass('site-header--compact');
                     }
                 }
             });

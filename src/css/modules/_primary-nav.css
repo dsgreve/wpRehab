@@ -1,5 +1,5 @@
 .nav-header{    
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     background-color: rgba($mainWhite, .85);
@@ -11,9 +11,10 @@
     flex-direction: column;
 
     @mixin atMedium {
+        position: absolute;
         z-index: 1;
         width: auto;
-        top: 50%;
+        top: 29px;
         right: 10px;
         height: auto;
         background-color: transparent;
@@ -78,4 +79,11 @@
         transition-delay: .4s; 
     }
    
+}
+
+@mixin atMedium {
+    .site-header--compact .nav-header {
+        top:20px;
+    }
+
 }
