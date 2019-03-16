@@ -34,3 +34,9 @@ h3 {
     top: -.1rem;
     position: relative;
 }
+
+.section-title {
+    color: $mainBackground;
+    font-size: 3rem;
+    text-align: center;
+}

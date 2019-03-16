@@ -811,6 +811,12 @@ h3 {
     position: relative;
 }
 
+.section-title {
+    color: #4ABDAC;
+    font-size: 3rem;
+    text-align: center;
+}
+
 .home-contact-row {
     background-image: url(http://localhost/wordpressrehab/rehabAdmin/wp-content/uploads/2019/01/adult-apple-device-business-839465.jpg);
     background-size: cover;

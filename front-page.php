@@ -3,14 +3,17 @@
  * This file adds the Front Page Template to any Genesis Child Theme.
  */
  
-genesis();
+// Remove default Genesis elements
+remove_action( 'genesis_entry_header',  'genesis_do_post_title'                 );
+remove_action( 'genesis_entry_header',  'genesis_entry_header_markup_open',  5  );
+remove_action( 'genesis_entry_header',  'genesis_entry_header_markup_close', 15 );
+remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas'           );
+remove_action( 'genesis_footer',        'genesis_footer_markup_open',         5 );
+remove_action( 'genesis_footer',        'genesis_do_footer'                     );
+remove_action( 'genesis_footer',        'genesis_footer_markup_close',       15 );
 
-add_action( 'get_header', 'remove_titles_all_single_pages' );
-function remove_titles_all_single_pages() {
-    if ( is_singular('page') ) {
-        remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
-    }
-}
+
+ genesis();
 ?>
 
 <section>
@@ -33,23 +36,24 @@ function remove_titles_all_single_pages() {
     </div>
 </div>
 </section>
-<h2>Key Services</h2>
-<div class="row">
- <div class="row__medium-6">
- <h2>Theme & Plugin Support</h2>
- <p>Have a new theme or plugin that you need to customize? Wordpress Rehab can help with wrangling unruly themes and making sure your plugins are secure.</p>
- </div>
- <div class="row__medium-6">
- <h2>Site Backup Plans</h2>
- <p> Rest easy knowing your site is always backed up and protected. A daily offsite backup plan will keep your site safe and easy to restore in the event of data loss. </p>
- </div>
- <div class="row__medium-6">
- <h2>Analytics Reporting </h2>
- <p>Knowing who your customers are, where they are coming from and how they are using your site will give you you the information needed to improve your website, and make it the best it can be. </p>
- </div>
- <div class="row__medium-6">
- <h2>Performance Optimization </h2>
- <p>A slow site will have have a negative effect on your bottom line. From mobile to desktop your users expect a page to load quickly. We make sure your site is running quickly and efficiently. </p>
- </div>
-</div>
-<?php get_footer(); ?>
+<h2 class="section-title">Services</h2>
+<div class="container container--medium">
+    <div class="row row--gutters">
+        <div class="row__medium-6">
+            <h2>Theme & Plugin Support</h2>
+            <p>Have a new theme or plugin that you need to customize? Wordpress Rehab can help with wrangling unruly themes and making sure your plugins are secure.</p>
+        </div>
+        <div class="row__medium-6">
+            <h2>Site Backup Plans</h2>
+            <p> Rest easy knowing your site is always backed up and protected. A daily offsite backup plan will keep your site safe and easy to restore in the event of data loss. </p>
+        </div>
+        <div class="row__medium-6">
+            <h2>Analytics Reporting </h2>
+            <p>Knowing who your customers are, where they are coming from and how they are using your site will give you you the information needed to improve your website, and make it the best it can be. </p>
+        </div>
+        <div class="row__medium-6">
+            <h2>Performance Optimization </h2>
+            <p>A slow site will have have a negative effect on your bottom line. From mobile to desktop your users expect a page to load quickly. We make sure your site is running quickly and efficiently. </p>
+        </div>
+    </div><!-- row -->
+</div><!--/container -->
