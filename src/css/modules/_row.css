@@ -9,13 +9,28 @@
     &--gutters > div {
       padding-right: 65px;
     }
+    &--py-60 {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
+    }
   
     @mixin atMedium {
       &__medium-4 {
         float: left;
         width: 33.33%;
       }
-  
+      &__medium-5 {
+        float: left;
+        width: 40%;
+      }
+      &__medium-6 {
+        float: left;
+        width: 50%;
+      }
+      &__medium-7 {
+        float: left;
+        width: 60%;
+      }
       &__medium-8 {
         float: left;
         width: 66.66%;

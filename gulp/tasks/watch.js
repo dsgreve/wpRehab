@@ -5,7 +5,7 @@ browserSync = require('browser-sync').create();
 gulp.task('watch', function() {
     browserSync.init({
         notify: false, //Hides reload message
-        proxy: "http://localhost/wordpressrehab/"
+        proxy: "http://localhost:81/wordpressrehab/"
     });
 
     watch('./**/*.php', function() {
