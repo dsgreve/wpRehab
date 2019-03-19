@@ -497,6 +497,14 @@ h1,h2,h3,h4, .wp-block-cover-text {
       padding-right: 65px;
     }
 
+.row--gutters-medium {
+      margin-right: -30px;
+    }
+
+.row--gutters-medium > div {
+      padding-right: 30px;
+    }
+
 .row--py-60 {
       padding-top: 3.75rem;
       padding-bottom: 3.75rem;
@@ -831,6 +839,33 @@ h3 {
     text-align: center;
 }
 
+.section-title__icon {
+        position: relative;
+        top: 10px;
+        margin-right: .5rem;
+        margin-left: 0;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+.service-item {
+    position: relative;
+    padding-left: 90px;
+}
+
+.service-item__title {
+    color: #4ABDAC;
+    font-size: 2rem;
+    }
+
+.service-item__icon {
+        position: absolute;
+        left: 0;
+        top: 6px;
+        margin:0 auto;
+        display: block;
+    }
+
 .home-contact-row {
     background-image: url(http://localhost/wordpressrehab/rehabAdmin/wp-content/uploads/2019/01/adult-apple-device-business-839465.jpg);
     background-size: cover;
@@ -857,3 +892,39 @@ h3 {
     border: 1px solid #4ABDAC;
     padding: .5rem;
 }
+
+/** DO NOT EDIT FILE DIRECTLY -- USING GULP-SPRITE **/
+
+.icon {
+    background-image: url(images/sprites/sprite-f7fea428.svg);
+}
+
+.icon--analytics-chart {
+        width: 75px;
+        height: 75px;
+        background-position: 0 0;
+    }
+
+.icon--backup-plan {
+        width: 75px;
+        height: 75px;
+        background-position: 50% 0;
+    }
+
+.icon--optimization-plan {
+        width: 75px;
+        height: 75px;
+        background-position: 0 100%;
+    }
+
+.icon--service-star {
+        width: 75px;
+        height: 75px;
+        background-position: 50% 100%;
+    }
+
+.icon--theme-support {
+        width: 75px;
+        height: 75px;
+        background-position: 100% 0;
+    }

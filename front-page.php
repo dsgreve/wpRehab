@@ -36,24 +36,33 @@ remove_action( 'genesis_footer',        'genesis_footer_markup_close',       15 
     </div>
 </div>
 </section>
-<h2 class="section-title">Services</h2>
+<h2 class="section-title"><span class="icon icon--service-star section-title__icon"></span>Services</h2>
 <div class="container container--medium">
-    <div class="row row--gutters">
+    <div class="row row--gutters-medium">
         <div class="row__medium-6">
-            <h2>Theme & Plugin Support</h2>
-            <p>Have a new theme or plugin that you need to customize? Wordpress Rehab can help with wrangling unruly themes and making sure your plugins are secure.</p>
+            <div class="service-item">
+                <h2 class="service-item__title"><span class="icon icon--theme-support service-item__icon"></span>Theme & Plugin Support</h2>
+                <p>Have a new theme or plugin that you need to customize? Wordpress Rehab can help with wrangling unruly themes and making sure your plugins are secure.</p>
+            </div>
         </div>
         <div class="row__medium-6">
-            <h2>Site Backup Plans</h2>
-            <p> Rest easy knowing your site is always backed up and protected. A daily offsite backup plan will keep your site safe and easy to restore in the event of data loss. </p>
+            <div class="service-item">
+                <h2 class="service-item__title"><span class="icon icon--backup-plan service-item__icon"></span>Site Backup Plans</h2>
+                <p>Rest easy knowing your site is always backed up and protected. A daily offsite backup plan will keep your site safe and easy to restore in the event of data loss. </p>
+            </div>
         </div>
         <div class="row__medium-6">
-            <h2>Analytics Reporting </h2>
-            <p>Knowing who your customers are, where they are coming from and how they are using your site will give you you the information needed to improve your website, and make it the best it can be. </p>
+            <div class="service-item">
+                <h2 class="service-item__title"><span class="icon icon--analytics-chart service-item__icon"></span>Analytics Reporting </h2>
+                <p>Knowing who your customers are, where they are coming from and how they are using your site will give you you the information needed to improve your website, and make it the best it can be. </p>
+            </div>
         </div>
         <div class="row__medium-6">
-            <h2>Performance Optimization </h2>
-            <p>A slow site will have have a negative effect on your bottom line. From mobile to desktop your users expect a page to load quickly. We make sure your site is running quickly and efficiently. </p>
+            <div class="service-item">
+            <h2 class="service-item__title"><span class="icon icon--optimization-plan service-item__icon"></span>Performance Optimization </h2>
+            <p>A slow site will have have a negative effect on your bottom line. From mobile to desktop your users expect a page to load quickly. We make sure your site is running quickly and efficiently.</p>
+        </div>
+
         </div>
     </div><!-- row -->
 </div><!--/container -->

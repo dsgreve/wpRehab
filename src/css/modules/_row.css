@@ -5,9 +5,16 @@
     &--gutters {
       margin-right: -65px;
     }
-  
     &--gutters > div {
       padding-right: 65px;
+    }
+
+    &--gutters-medium {
+      margin-right: -30px;
+    }
+  
+    &--gutters-medium > div {
+      padding-right: 30px;
     }
     &--py-60 {
       padding-top: 3.75rem;

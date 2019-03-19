@@ -1,0 +1,29 @@
+/** DO NOT EDIT FILE DIRECTLY -- USING GULP-SPRITE **/
+.icon {
+    background-image: url(images/sprites/sprite-f7fea428.svg);
+}
+    .icon--analytics-chart {
+        width: 75px;
+        height: 75px;
+        background-position: 0 0;
+    }
+    .icon--backup-plan {
+        width: 75px;
+        height: 75px;
+        background-position: 50% 0;
+    }
+    .icon--optimization-plan {
+        width: 75px;
+        height: 75px;
+        background-position: 0 100%;
+    }
+    .icon--service-star {
+        width: 75px;
+        height: 75px;
+        background-position: 50% 100%;
+    }
+    .icon--theme-support {
+        width: 75px;
+        height: 75px;
+        background-position: 100% 0;
+    }

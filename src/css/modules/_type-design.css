@@ -39,4 +39,28 @@ h3 {
     color: $mainBackground;
     font-size: 3rem;
     text-align: center;
+    &__icon {
+        position: relative;
+        top: 10px;
+        margin-right: .5rem;
+        margin-left: 0;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+}
+
+.service-item {
+    position: relative;
+    padding-left: 90px;
+    &__title {
+    color: $mainBackground;
+    font-size: 2rem;
+    }
+    &__icon {
+        position: absolute;
+        left: 0;
+        top: 6px;
+        margin:0 auto;
+        display: block;
+    }
 }

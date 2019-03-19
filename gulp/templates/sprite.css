@@ -1,0 +1,13 @@
+/** DO NOT EDIT FILE DIRECTLY -- USING GULP-SPRITE **/
+{{#shapes}}
+{{#first}}
+.icon {
+    background-image: url(images/sprites/{{{sprite}}});
+}
+{{/first}}
+    .icon--{{base}} {
+        width: {{width.outer}}px;
+        height: {{height.outer}}px;
+        background-position: {{position.relative.xy}};
+    }
+{{/shapes}}
