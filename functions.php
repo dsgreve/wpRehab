@@ -85,7 +85,7 @@ add_action( 'wp_enqueue_scripts', 'wpRehab_add_google_fonts' );
 
 //enqueue custom js
 function wpRehab_adding_scripts() {
-    wp_enqueue_script('app', '/wp-content/themes/wpRehab/custom/scripts/App.js', array ( 'jquery' ), 1.1, true);
+    wp_enqueue_script('app', '/wp-content/themes/wpRehab/custom/scripts/Bundle.js', array ( 'jquery' ), 1.1, true);
     
 }
 add_action( 'wp_enqueue_scripts', 'wpRehab_adding_scripts' );

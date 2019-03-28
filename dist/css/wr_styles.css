@@ -467,6 +467,9 @@ h1,h2,h3,h4, .wp-block-cover-text {
 
 @media only screen and (min-width: 530px) {
 
+.container--b-margin {
+        margin-bottom: 3.875rem
+    }
     }
 
 .row::after{
@@ -494,6 +497,13 @@ h1,h2,h3,h4, .wp-block-cover-text {
 .row--py-60 {
       padding-top: 3.75rem;
       padding-bottom: 3.75rem;
+    }
+
+@media only screen and (min-width: 530px) {
+      .row__small-6 {
+        float: left;
+        width: 50%;
+      }
     }
 
 @media only screen and (min-width: 800px) {
@@ -648,8 +658,22 @@ h1,h2,h3,h4, .wp-block-cover-text {
 }
 
 .home .wp-block-cover {
-    min-height: 650px;
+    min-height: 40.8125rem;
 }
+
+h1.hero__title{
+    font-size: 2rem;
+    
+}
+
+@media only screen and (min-width: 800px) {
+
+h1.hero__title{
+        font-size: 3.5rem;
+        max-width: 770px
+    
+}
+    }
 
 .nav-header{    
     position: fixed;
@@ -776,6 +800,10 @@ h1,h2,h3,h4, .wp-block-cover-text {
         opacity: 1;
     }
 
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
 h2 {
     font-size: 2.25rem;
 }
@@ -784,15 +812,8 @@ h3 {
     font-size: 2rem;
 }
 
-.service-item h3 {
-    text-align: center;
-}
-
-.service-item p {
-    font-size: 1.25rem;
-    max-width: 21.875rem;
-    margin-left: auto;
-    margin-right: auto;
+.test {
+    color: red;
 }
 
 .large-headline {
@@ -823,33 +844,32 @@ h3 {
     color: #4ABDAC;
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.section-title__icon {
-        position: relative;
-        top: 10px;
-        margin-right: .5rem;
-        margin-left: 0;
-        margin-bottom: 0;
-        display: inline-block;
-    }
+.general-text p {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
 
 .service-item {
     position: relative;
-    padding-left: 90px;
+    padding-top: 50px;
+    margin-bottom:2.5rem;
+    text-align: center;
+        
 }
 
 .service-item__title {
     color: #4ABDAC;
+    text-align:center;
     font-size: 2rem;
+    margin-bottom: 1rem;
     }
 
 .service-item__icon {
-        position: absolute;
-        left: 0;
-        top: 6px;
-        margin:0 auto;
         display: block;
+        margin: auto;
     }
 
 .home-contact-row {

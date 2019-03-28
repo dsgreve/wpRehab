@@ -1,10 +1,10 @@
 var path = require('path');
 module.exports = {
     mode: 'none',
-    entry: "./src/scripts/App.js",
+    entry: "./src/scripts/Bundle.js",
     output: {
         path: path.resolve(__dirname, "./custom/scripts"),
-        filename: "App.js"
+        filename: "Bundle.js"
     },
     module: {
         rules: [
