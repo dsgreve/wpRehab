@@ -37,7 +37,7 @@ export const reload = done => {
 export const clean = () => del(['dist']);
 
 export const styles = () => {
-  return src('src/css/wr_styles.css')
+  return src('src/css/wr-styles.css')
     .pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba, autoprefixer]))
     .pipe(gulpif(PRODUCTION, cleanCss({compatibility:'ie8'})))
     .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
@@ -57,7 +57,7 @@ export const copy = () => {
 }
 
 export const scripts = () => {
-    return src(['src/js/bundle.js'])
+    return src(['src/js/bundle.js', 'src/js/admin.js'])
         .pipe(named())
         .pipe(webpack({
             module: {

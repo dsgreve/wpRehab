@@ -77,18 +77,14 @@ function wpRehab_setup() {
     include_once( get_stylesheet_directory() . '\includes\widget-area.php' );
 }
 
-//enqueue google fonts
-function wpRehab_add_google_fonts() {
-    wp_enqueue_style( 'wpRehab_google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,500,700|Raleway', false );
-}
-add_action( 'wp_enqueue_scripts', 'wpRehab_add_google_fonts' );
 
-//enqueue custom js
-function wpRehab_adding_scripts() {
-    wp_enqueue_script('app', '/wp-content/themes/wpRehab/custom/scripts/Bundle.js', array ( 'jquery' ), 1.1, true);
-    
+function _wprehab_assets() {
+    wp_enqueue_style( 'wpRehab_google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,500,700|Raleway', false );
+    wp_enqueue_style( '_altairatc-stylesheet', get_stylesheet_directory_uri() . '/dist/css/wr-styles.css', array(), '1.0.0', 'all' );
+    wp_enqueue_script( '_altairatc-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array('jquery'), '1.0.0', true );
 }
-add_action( 'wp_enqueue_scripts', 'wpRehab_adding_scripts' );
+add_action('wp_enqueue_scripts','_wprehab_assets');
+
 
 add_action( 'genesis_before', 'prefix_remove_entry_header' );
 /**
@@ -114,6 +110,17 @@ function prefix_remove_entry_header()
 
 
 }
+
+
+
+
+function add_genesis_after_entry_content() {
+    if ( is_front_page() ) {
+    include_once('partials/front-page-content.php');
+    }
+};
+add_action('genesis_after_entry_content', 'add_genesis_after_entry_content');
+
 
 /**
  * Register support for Gutenberg wide images in your theme

@@ -413,6 +413,28 @@ h1,h2,h3,h4, .wp-block-cover-text {
   width: 100vw;
 }
 
+/** only show on small screens **/
+
+.hide-small {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+
+.hide-small {
+    display: inherit
+}
+    }
+
+/** only show on medium and up screens **/
+
+@media only screen and (min-width: 800px) {
+
+.hide-medium {
+    display: none
+}
+    }
+
 .container {
     padding-left: 18px;
     padding-right: 18px;
@@ -494,6 +516,14 @@ h1,h2,h3,h4, .wp-block-cover-text {
       padding-right: 30px;
     }
 
+.row--gutters-small {
+      margin-right: -15px;
+    }
+
+.row--gutters-small > div {
+      padding-right: 15px;
+    }
+
 .row--py-60 {
       padding-top: 3.75rem;
       padding-bottom: 3.75rem;
@@ -527,6 +557,49 @@ h1,h2,h3,h4, .wp-block-cover-text {
         float: left;
         width: 66.66%;
       }
+    }
+
+/* Begin Equal Height Rule */
+
+@media only screen and (min-width: 530px) {
+
+.row--equal-height-at-small {
+      display: flex;
+      flex-wrap: wrap
+  }
+    }
+
+.row--equal-height-at-small > div {
+      float: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+@media only screen and (min-width: 800px) {
+
+.row--equal-height-at-medium {
+      display: flex;
+      flex-wrap: wrap
+  }
+    }
+
+.row--equal-height-at-medium > div {
+      float: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+@media screen and (min-width: 1010px) {
+
+.row--equal-height-at-large {
+      display: flex;
+      flex-wrap: wrap
+  }        
+    }
+
+.row--equal-height-at-large > div {
+      float: none;
+      display: flex;
     }
 
 .site-header {
@@ -634,7 +707,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
 }
 
 .header-image .site-title {
-    background: url(images/logo.png) no-repeat;
+    background: url(../images/logo.png) no-repeat;
     background-size: contain;
     height: 45px;
     width: 230px;
@@ -817,16 +890,17 @@ h3 {
 }
 
 .large-headline {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 80px;
 }
 
 @media only screen and (min-width: 800px) {
 
 .large-headline {
             font-size: 2.25rem;
-            margin-bottom: 0
+            margin-bottom: 0;
+            margin-top: 36px
 }
     }
 
@@ -853,9 +927,8 @@ h3 {
 }
 
 .service-item {
-    position: relative;
-    padding-top: 50px;
-    margin-bottom:2.5rem;
+
+    margin-bottom:3.5rem;
     text-align: center;
         
 }
@@ -869,7 +942,7 @@ h3 {
 
 .service-item__icon {
         display: block;
-        margin: auto;
+        margin: 0 auto 1.25rem;
     }
 
 .home-contact-row {
@@ -902,7 +975,7 @@ h3 {
 /** DO NOT EDIT FILE DIRECTLY -- USING GULP-SPRITE **/
 
 .icon {
-    background-image: url(images/sprites/sprite-f7fea428.svg);
+    background-image: url(../images/sprites/sprite-f7fea428.svg);
 }
 
 .icon--analytics-chart {

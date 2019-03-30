@@ -1,6 +1,6 @@
 /** DO NOT EDIT FILE DIRECTLY -- USING GULP-SPRITE **/
 .icon {
-    background-image: url(images/sprites/sprite-f7fea428.svg);
+    background-image: url(../images/sprites/sprite-f7fea428.svg);
 }
     .icon--analytics-chart {
         width: 75px;

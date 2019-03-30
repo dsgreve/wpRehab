@@ -89,7 +89,7 @@
 }
 
 .header-image .site-title {
-    background: url(images/logo.png) no-repeat;
+    background: url(../images/logo.png) no-repeat;
     background-size: contain;
     height: 45px;
     width: 230px;
