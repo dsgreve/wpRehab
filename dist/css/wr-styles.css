@@ -349,6 +349,14 @@ template {
   display: none;
 }
 
+/* Morning Sky: #CAE4DB – Never underestimate a color palette created by a photograph to set the tone of your design
+
+Honey: #DCAE1D – In this case the palette is set with the photo and then echoed in the subtitle.
+
+Cerulean: #00303F – Cerulean is incredibly classy as a black or dark grey alternative if used consistently throughout
+
+Mist: #7A9D96 – This clean, natural color is established in the photo but could be used on a lower full-width block or buttons as well. */
+
 .genesis-skip-link,
 .hidden {
   position:absolute;
@@ -384,6 +392,7 @@ img {
 
 h1,h2,h3,h4, .wp-block-cover-text {
   font-family: 'Raleway', serif;
+  letter-spacing: .125rem;
 }
 
 /* global layout */
@@ -605,7 +614,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
 .site-header {
     position: absolute;
     z-index: 10;
-    background-color: rgba(74,189,172, .85);
+    background-color: rgba(0,48,63, .85);
     padding: .25rem 0;
     width: 100%;
     transition: all .3s ease-out;
@@ -677,7 +686,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
 }
 
         .site-header--compact {
-            background: rgba(74,189,172, 1);
+            background: rgba(0,48,63, 1);
             padding: 0;
         }
     }
@@ -915,7 +924,7 @@ h3 {
 }
 
 .section-title {
-    color: #4ABDAC;
+    color: #00303F;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -934,7 +943,7 @@ h3 {
 }
 
 .service-item__title {
-    color: #4ABDAC;
+    color: #00303F;
     text-align:center;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -945,32 +954,44 @@ h3 {
         margin: 0 auto 1.25rem;
     }
 
-.home-contact-row {
-    background-image: url(http://localhost/wordpressrehab/rehabAdmin/wp-content/uploads/2019/01/adult-apple-device-business-839465.jpg);
+.home-contact {
+    background-image: url(../images/working-entry-bg.jpg);
     background-size: cover;
-    width: 100vw;
+    background-position: center;
     position: relative;
-    margin-left: -50vw;
-    left: 50%;
 }
 
-.home-contact-row .wp-block-column {
-    background-color: rgba(74,189,172, .85);
-    padding: 1.25rem;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
-}
+.home-contact__overlay {
+        background-color: rgba(0,48,63, .85);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;;
+    }
 
-.wpforms-container {
-    
-}
+.home-contact__content {
+        z-index: 20;
+        position: relative;
+        padding: 3rem 0;
+    }
 
-.wpforms-container input[type=date], .wpforms-container input[type=datetime], .wpforms-container input[type=datetime-local], .wpforms-container input[type=email], .wpforms-container input[type=month], .wpforms-container input[type=number], .wpforms-container input[type=password], .wpforms-container input[type=range], .wpforms-container input[type=search], .wpforms-container input[type=tel], .wpforms-container input[type=text], .wpforms-container input[type=time], .wpforms-container input[type=url], .wpforms-container input[type=week], .wpforms-container select, .wpforms-container textarea {
-    border: 1px solid #4ABDAC;
-    padding: .5rem;
-}
+.home-contact__title {
+        text-align: center;
+        color: #FFF;
+        margin-bottom: 20px;
+    }
+
+.home-contact__form-wrap{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+.home-contact__form-wrap label {
+            color: #FFF;
+            font-size: 1.25rem;
+        }
 
 /** DO NOT EDIT FILE DIRECTLY -- USING GULP-SPRITE **/
 

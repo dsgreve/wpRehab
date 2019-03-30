@@ -53,3 +53,19 @@ h1,h2,h3,h4, .wp-block-cover-text {
 .alignfull img {
   width: 100vw;
 }
+
+
+/** only show on small screens **/
+.hide-small {
+  display: none;
+  @mixin atMedium {
+    display: inherit;
+  }
+}
+/** only show on medium and up screens **/
+.hide-medium {
+
+  @mixin atMedium {
+    display: none;
+  }
+}

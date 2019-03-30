@@ -53,12 +53,18 @@
     </div><!-- row -->
 </div><!--/container -->
 </section>
-<section class="contact">
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-<script>
-  hbspt.forms.create({
-	portalId: "5681471",
-	formId: "55d3fe7f-1506-4346-97e9-7abaf44a40c5"
-});
-</script>
+<section class="home-contact contact">
+    <div class="home-contact__overlay"></div>
+    <div class="container home-contact__content">
+        <h2 class="home-contact__title">Lets Connect</h2>
+        <div class="home-contact__form-wrap">
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+        <script>
+        hbspt.forms.create({
+            portalId: "5681471",
+            formId: "55d3fe7f-1506-4346-97e9-7abaf44a40c5"
+        });
+        </script>
+        </div>
+    </div>
 </section>
