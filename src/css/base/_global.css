@@ -34,10 +34,16 @@ h1,h2,h3,h4, .wp-block-cover-text {
 }
 /* global layout */
 .wrap, .entry-content {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1200px;
-  position: relative;
+  padding-left: 18px;
+    padding-right: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    position: relative;
+  
+    &--medium {
+      max-width: 976px;
+    }
 }
 
 /**  FULL WIDTH  **/

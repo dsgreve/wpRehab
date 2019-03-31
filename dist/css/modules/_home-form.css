@@ -1,26 +1,37 @@
-.home-contact-row {
-    background-image: url(http://localhost/wordpressrehab/rehabAdmin/wp-content/uploads/2019/01/adult-apple-device-business-839465.jpg);
+.home-contact {
+    background-image: url(../images/working-entry-bg.jpg);
     background-size: cover;
-    width: 100vw;
+    background-position: center;
     position: relative;
-    margin-left: -50vw;
-    left: 50%;
-}
 
-.home-contact-row .wp-block-column {
-    background-color: rgba($mainBackground, .85);
-    padding: 1.25rem;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    &__overlay {
+        background-color: rgba($mainBackground, .85);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;;
+    }
 
-.wpforms-container {
-    
-}
+    &__content {
+        z-index: 20;
+        position: relative;
+        padding: 3rem 0;
+    }
 
-.wpforms-container input[type=date], .wpforms-container input[type=datetime], .wpforms-container input[type=datetime-local], .wpforms-container input[type=email], .wpforms-container input[type=month], .wpforms-container input[type=number], .wpforms-container input[type=password], .wpforms-container input[type=range], .wpforms-container input[type=search], .wpforms-container input[type=tel], .wpforms-container input[type=text], .wpforms-container input[type=time], .wpforms-container input[type=url], .wpforms-container input[type=week], .wpforms-container select, .wpforms-container textarea {
-    border: 1px solid $mainBackground;
-    padding: .5rem;
+    &__title {
+        text-align: center;
+        color: #FFF;
+        margin-bottom: 20px;
+    }
+
+    &__form-wrap{
+        max-width: 500px;
+        margin: 0 auto;
+        & label {
+            color: #FFF;
+            font-size: 1.25rem;
+        }
+    }
 }

@@ -349,6 +349,8 @@ template {
   display: none;
 }
 
+/* original teal $mainBackground: #4ABDAC;
+
 /* Morning Sky: #CAE4DB – Never underestimate a color palette created by a photograph to set the tone of your design
 
 Honey: #DCAE1D – In this case the palette is set with the photo and then echoed in the subtitle.
@@ -398,11 +400,17 @@ h1,h2,h3,h4, .wp-block-cover-text {
 /* global layout */
 
 .wrap, .entry-content {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1200px;
-  position: relative;
+  padding-left: 18px;
+    padding-right: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    position: relative;
 }
+
+.wrap--medium, .entry-content--medium {
+      max-width: 976px;
+    }
 
 /**  FULL WIDTH  **/
 
@@ -613,7 +621,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
 
 .site-header {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     background-color: rgba(0,48,63, .85);
     padding: .25rem 0;
     width: 100%;
@@ -626,7 +634,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
       position: absolute;
       top: 39px;
       right: 16px;
-      z-index: 10;
+      z-index: 100;
       transition: all 0.3s ease-out;
     }
 
@@ -962,7 +970,7 @@ h3 {
 }
 
 .home-contact__overlay {
-        background-color: rgba(0,48,63, .85);
+        background-color: rgba(202,228,219, .75);
         position: absolute;
         top: 0;
         left: 0;
@@ -1028,3 +1036,12 @@ h3 {
         height: 75px;
         background-position: 100% 0;
     }
+
+.site-footer {
+    padding: 3rem 0;
+    background: #00303F;
+}
+
+.site-footer p { color: #FFF;}
+
+.site-footer a { color: #DCAE1D;}

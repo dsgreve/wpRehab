@@ -1,0 +1,8 @@
+.site-footer {
+    padding: 3rem 0;
+    background: $mainBackground;
+
+    & p { color: #FFF;}
+
+    & a { color: $linkColor;}
+}

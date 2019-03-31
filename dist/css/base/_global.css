@@ -30,6 +30,7 @@ img {
 }
 h1,h2,h3,h4, .wp-block-cover-text {
   font-family: 'Raleway', serif;
+  letter-spacing: .125rem;
 }
 /* global layout */
 .wrap, .entry-content {

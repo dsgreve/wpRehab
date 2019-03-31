@@ -1,6 +1,6 @@
 .site-header {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     background-color: rgba($mainBackground, .85);
     padding: .25rem 0;
     width: 100%;
@@ -12,7 +12,7 @@
       position: absolute;
       top: 39px;
       right: 16px;
-      z-index: 10;
+      z-index: 100;
       transition: all 0.3s ease-out;
       
       &::before {

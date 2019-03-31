@@ -106,8 +106,12 @@ function prefix_remove_entry_header()
 	remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
 	//* Remove the post format image (requires HTML5 theme support)
-	remove_action( 'genesis_entry_header', 'genesis_do_post_format_image', 4 );
-
+    remove_action( 'genesis_entry_header', 'genesis_do_post_format_image', 4 );
+    
+	// Remove site footer.
+    remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
+    remove_action( 'genesis_footer', 'genesis_do_footer' );
+    remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 
 }
 
@@ -120,6 +124,12 @@ function add_genesis_after_entry_content() {
     }
 };
 add_action('genesis_after_entry_content', 'add_genesis_after_entry_content');
+
+// Customize site footer
+add_action( 'genesis_footer', 'wpr_custom_footer' );
+function wpr_custom_footer() {
+    include_once('partials/site-footer.php');
+}
 
 
 /**
