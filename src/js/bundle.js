@@ -1,14 +1,12 @@
-// import MobileMenu from './modules/MobileMenu';
-// import RevealOnScroll from './modules/RevealOnScroll';
-// import StickyHeader from './modules/StickyHeader';
-// import $ from 'jquery';
+import MobileMenu from './modules/MobileMenu';
+import RevealOnScroll from './modules/RevealOnScroll';
+import StickyHeader from './modules/StickyHeader';
+import $ from 'jquery';
 
-// const mobileMenu = new MobileMenu();
-// new RevealOnScroll($(".large-headline"), "90%");
-// new RevealOnScroll($(".service-item"), "85%");
-// new RevealOnScroll($(".wp-block-quote"), "75%");
-// new RevealOnScroll($(".home-contact"), "60%");
-// const stickyHeader = new StickyHeader();
+new RevealOnScroll($(".large-headline"), "90%");
+new RevealOnScroll($(".service-item"), "85%");
+new RevealOnScroll($(".wp-block-quote"), "75%");
+new RevealOnScroll($(".home-contact"), "60%");
 
-// import MobileMenu from './modules/MobileMenu';
-import './modules/menu.js';
+const mobileMenu = new MobileMenu();
+const stickyHeader = new StickyHeader();

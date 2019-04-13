@@ -5,6 +5,11 @@
     left: 50%;
 }
 
+
+.wp-block-cover {
+    min-height: 40.8125rem;
+    margin-top: -85px;
+}
 .home .wp-block-cover {
     min-height: 40.8125rem;
 }

@@ -5,18 +5,18 @@
             <h2 class="large-headline">Spend more time managing your business and enjoy the peace of mind knowing your WordPress website is always updated, efficient and relevant to your customers. </h2>
         </div>
         <div class="row__medium-5">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/images/float-image-2.jpg">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/dist/images/float-image-2.jpg">
         </div>
     </div>
     <div class="row row--gutters">
         <div class="row__medium-5 hide-small">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/images/float-image-1.jpg">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/dist/images/float-image-1.jpg">
         </div>
         <div class="row__medium-7">
             <h2 class="large-headline">From minor updates to complete redesigns WordPress Rehab has 12 years of website support experience that will keep your online presence up to date and stress-free.</h2>
         </div>
         <div class="row__medium-5 hide-medium">
-            <img src="<?php echo get_stylesheet_directory_uri();?>/images/float-image-1.jpg">
+            <img src="<?php echo get_stylesheet_directory_uri();?>/dist/images/float-image-1.jpg">
         </div>
     </div>
 </div>

@@ -5,7 +5,7 @@
     position: relative;
 
     &__overlay {
-        background-color: rgba($mainBackground, .85);
+        background-color: rgba($secondaryBackground, .75);
         position: absolute;
         top: 0;
         left: 0;
@@ -22,7 +22,7 @@
 
     &__title {
         text-align: center;
-        color: #FFF;
+        color: $mainBackground;
         margin-bottom: 20px;
     }
 
@@ -30,7 +30,7 @@
         max-width: 500px;
         margin: 0 auto;
         & label {
-            color: #FFF;
+            color: $mainBackground;
             font-size: 1.25rem;
         }
     }

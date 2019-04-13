@@ -28,6 +28,9 @@ img {
 .site-container {
   overflow: hidden;
 }
+.site-inner {
+  margin-top: 85px;
+}
 h1,h2,h3,h4, .wp-block-cover-text {
   font-family: 'Raleway', serif;
   letter-spacing: .125rem;
@@ -40,6 +43,7 @@ h1,h2,h3,h4, .wp-block-cover-text {
     margin-right: auto;
     max-width: 1400px;
     position: relative;
+   
   
     &--medium {
       max-width: 976px;
@@ -76,3 +80,13 @@ h1,h2,h3,h4, .wp-block-cover-text {
     display: none;
   }
 }
+
+/** HIDE SIDEBAR **/
+aside#genesis-sidebar-primary.sidebar.sidebar-primary.widget-area {
+  display: none !IMPORTANT;
+}
+
+aside {
+  display: none !IMPORTANT;
+}
+
