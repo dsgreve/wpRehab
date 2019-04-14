@@ -1,6 +1,8 @@
+
+
 <?php
 /**
- * Template Name: Category Archives
+ * Template Name: Blog Posts
  */
 add_action( 'genesis_loop', 'custom_category_loop' );
 /**
@@ -13,7 +15,7 @@ function custom_category_loop() {
  foreach ( $categories as $category ) {
  // Display category name
  //echo '<h2 class="post-title">' . $category->name . '</h2>';
- echo '<div class="container row--py-60"><div class="row row--equal-height-at-medium row--gutters-medium ">';
+ echo '<div class="container"><div class="row row--py-40 row--equal-height-at-medium row--gutters-medium ">';
  // WP_Query arguments
  $args = array(
  'cat' => $category->term_id,
@@ -25,11 +27,14 @@ function custom_category_loop() {
  if ( $query->have_posts() ) {
  while ( $query->have_posts() ) {
  $query->the_post();
+ $thumb_id = get_post_thumbnail_id();
+$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+$thumb_url = $thumb_url_array[0];
  ?>
  <div class="row__medium-4">
-    <article class="post-list__entry">
-        <h2 class="entry-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-        <p class="entry-cat"><a href="<?php the_permalink();?>"><?php echo $category->name ?></a></p>
+    <article class="post-list__entry" style="background-image: url('<?php echo $thumb_url ?>')">
+    <a class="post-list__entry--link-overlay" href="<?php the_permalink();?>"></a>
+    <h2 class="entry-title"><?php the_title(); ?></h2>
     </article>
  </div>
  <?php

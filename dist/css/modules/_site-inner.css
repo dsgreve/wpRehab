@@ -1,0 +1,16 @@
+
+.home .site-inner {
+    margin-top: 122px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: inherit;
+  }
+
+.site-inner {
+    margin: 122px auto 40px;
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1200px;
+  }
+

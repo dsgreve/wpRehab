@@ -110,9 +110,18 @@ function prefix_remove_entry_header()
 
 }
 
+
+function be_remove_genesis_page_templates( $page_templates ) {
+	unset( $page_templates['page_archive.php'] );
+	unset( $page_templates['page_blog.php'] );
+	return $page_templates;
+}
+add_filter( 'theme_page_templates', 'be_remove_genesis_page_templates' );
+
+
 add_action( 'genesis_before', 'remove_genesis_features' );
 function remove_genesis_features() {
-    remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+    //remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
     remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
     remove_action('genesis_footer', 'genesis_do_footer');
     remove_action('genesis_footer', 'genesis_footer_markup_open', 5);
@@ -145,6 +154,27 @@ add_action( 'genesis_footer', 'wpr_custom_footer' );
 function wpr_custom_footer() {
     include_once('partials/site-footer.php');
 }
+
+
+// Add Google Tag Manager code in <head>
+add_action( 'wp_head', 'dg_gtm_one' );
+function dg_gtm_one() { ?>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T86XTFP');</script>
+<!-- End Google Tag Manager -->
+<?php }
+// Add Google Tag Manager code immediately below opening <body> tag
+add_action( 'genesis_before', 'dg_gtm_two' );
+function dg_gtm_two() { ?>
+	<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T86XTFP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<?php }
 
 
 

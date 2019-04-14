@@ -106,5 +106,5 @@ export const watchForChanges = () => {
 }
 
 export const dev = series(clean, parallel(styles, images, copy, scripts), serve, watchForChanges);
-export const build = series(clean, parallel(styles, images, copy, scripts), pot);
+export const build = series(clean, parallel(styles, images, copy, scripts));
 export default dev;

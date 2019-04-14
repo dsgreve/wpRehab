@@ -36,12 +36,12 @@ h1,h2,h3,h4, .wp-block-cover-text {
   letter-spacing: .125rem;
 }
 /* global layout */
-.wrap, .entry-content {
+.wrap {
   padding-left: 18px;
     padding-right: 18px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1400px;
+    max-width: 1200px;
     position: relative;
    
   
@@ -89,4 +89,3 @@ aside#genesis-sidebar-primary.sidebar.sidebar-primary.widget-area {
 aside {
   display: none !IMPORTANT;
 }
-

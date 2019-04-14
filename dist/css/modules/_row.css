@@ -25,6 +25,11 @@
     }
 
 
+    &--py-40 {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+    
     &--py-60 {
       padding-top: 3.75rem;
       padding-bottom: 3.75rem;
