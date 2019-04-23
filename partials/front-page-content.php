@@ -9,13 +9,13 @@
         </div>
     </div>
     <div class="row row--gutters">
-        <div class="row__medium-5 hide-small">
+        <div class="row__medium-5 hide-small slide-right">
             <img src="<?php echo get_stylesheet_directory_uri();?>/dist/images/float-image-1.jpg">
         </div>
-        <div class="row__medium-7">
+        <div class="row__medium-7 slide-left">
             <h2 class="large-headline">From minor updates to complete redesigns WordPress Rehab has 12 years of website support experience that will keep your online presence up to date and stress-free.</h2>
         </div>
-        <div class="row__medium-5 hide-medium">
+        <div class="row__medium-5 hide-medium slide-right">
             <img src="<?php echo get_stylesheet_directory_uri();?>/dist/images/float-image-1.jpg">
         </div>
     </div>

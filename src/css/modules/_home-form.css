@@ -30,12 +30,7 @@
     }
 
     &__form-wrap{
-        margin: 0 auto;
-        height: 560px;
-        @mixin atMedium {
-            height: 490px;
-        }
-        
+        margin: 0 auto;     
         
         & label {
             color: $mainBackground;
