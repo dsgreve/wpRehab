@@ -53,7 +53,7 @@
     </div><!-- row -->
 </div><!--/container -->
 </section>
-<section class="home-contact contact">
+<section id="contact-form" class="home-contact contact">
     <div class="home-contact__overlay"></div>
     <div class="container home-contact__content">
         <h2 class="home-contact__title">Lets Connect</h2>
