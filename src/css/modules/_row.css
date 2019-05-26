@@ -1,7 +1,9 @@
   .row {
 
     @mixin clearfix;
-  
+    > div {
+      margin-bottom: 1.25rem;
+    }
     &--gutters {
       margin-right: -65px;
     }
@@ -90,8 +92,7 @@
 
     & > div {
       float: none;
-      display: flex;
-      flex-direction: column;
+    
     }
   }
 
