@@ -1,5 +1,6 @@
 const path = require("path");
 const common = require("./webpack.common");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 const merge = require("webpack-merge");
 const postCSSPlugins = [
   require('postcss-import'),
@@ -7,7 +8,9 @@ const postCSSPlugins = [
   require('postcss-nested'),
   require('autoprefixer')
 ]
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
 
 module.exports = merge(common, {
   mode: "development",
@@ -15,9 +18,13 @@ module.exports = merge(common, {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist")
   },
+  watch: true,
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/template.html"
+    new MiniCssExtractPlugin({filename: 'css/wr-styles.css',}),
+    new BrowserSyncPlugin({
+      files: '**/*.php',
+      injectChanges: true,
+      proxy: 'http://localhost:81/wordpressrehab'
     })
   ],
   module: {
@@ -25,11 +32,14 @@ module.exports = merge(common, {
       {
         test: /\.css$/,
         use: [
-          "style-loader", //3. Inject styles into DOM
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: { }
+          }, //3. Inject styles into DOM
           "css-loader", //2. Turns css into commonjs
           {loader: "postcss-loader", options: { plugins: postCSSPlugins}} //1. Turns postcss into css
         ]
       }
     ]
-  }  
+  }
 });
