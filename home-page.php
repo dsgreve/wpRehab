@@ -18,7 +18,6 @@ get_header(); ?>
 					<div class="entry-links"><?php wp_link_pages(); ?></div>
 					<?php endwhile; endif; ?>
 				</section>
-
 					<section class="hpOptions">
 						<div>
 							<img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/keyboard.svg" alt="keyboard"/>

@@ -16,7 +16,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = merge(common, {
   mode: "production",
   output: {
-    filename: "[name].[contentHash].bundle.js", //use [name] to give file name of main or vendor
+    filename: "[name].js", //use [name] to give file name of main or vendor
     path: path.resolve(__dirname, "dist")
   },
   optimization: {
@@ -26,19 +26,9 @@ module.exports = merge(common, {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/template.html",
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true
-      }
-    }),
+    
     new MiniCssExtractPlugin({
-      filename: "[name].[contentHash].css"
+      filename: 'css/wr-styles.css'
     }),
     new CleanWebpackPlugin()
   ],
@@ -47,9 +37,9 @@ module.exports = merge(common, {
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader, //3. extract css into files
-          "css-loader", //2. Turns css into commonjs
-          "sass-loader" //1. Turns sass into css
+          MiniCssExtractPlugin.loader, //3. Inject styles into DOM
+          'css-loader?url=false', //2. Turns css into commonjs
+          {loader: 'postcss-loader', options: { plugins: postCSSPlugins}} //1. Turns postcss into css
         ]
       }
     ]
