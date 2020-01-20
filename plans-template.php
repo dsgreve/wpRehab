@@ -1,7 +1,7 @@
 <?php
 /**
-Template Name: Plans
-Description: Care Plans template
+**Template Name: Plans
+** Description: Care Plans template
 */
 ?>
 <?php get_header(); ?>

@@ -78,8 +78,8 @@ function wpRehab_setup() {
 
 function _wprehab_assets() {
     wp_enqueue_style( 'wpRehab_google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,500,700|Raleway', false );
-    wp_enqueue_style( '_altairatc-stylesheet', get_stylesheet_directory_uri() . '/dist/css/wr-styles.css', array(), '1.0.0', 'all' );
-    wp_enqueue_script( '_altairatc-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_style( '_wpRehab-stylesheet', get_stylesheet_directory_uri() . '/dist/css/wr-styles.css', array(), '1.0.0', 'all' );
+    wp_enqueue_script( '_wpRehab-scripts', get_stylesheet_directory_uri() . '/dist/bundled.js', array('jquery'), '1.0.0', true );
 }
 add_action('wp_enqueue_scripts','_wprehab_assets');
 
