@@ -32,6 +32,7 @@
     "jquery": "^3.4.1",
     "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-hexrgba": "^2.0.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-mixins": "^6.2.3",
@@ -45,6 +46,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "clean-webpack-plugin": "^2.0.0"
+    "clean-webpack-plugin": "^2.0.0",
+    "normalize.css": "^8.0.1"
   }
 }
